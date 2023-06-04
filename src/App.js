@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import PostForm from './classRequest/PostForm';
+import PostList from './classRequest/PostList';
+import DataFetchingOne from './reducer/DataFetchingOne';
+import ReducerDataFetching from './reducer/ReducerDataFetching';
+import ButtonClickDataFetching from './requests/ButtonClickDataFetching';
+import DataFetching from './requests/DataFetching';
+import IndivDataFetching from './requests/IndivDataFetching';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReducerDataFetching />
+      {/* <DataFetchingOne /> */}
+      {/* <ButtonClickDataFetching /> */}
+      {/* <IndivDataFetching /> */}
+      {/* <DataFetching /> */}
+      {/* <PostForm /> */}
+      {/* <PostList /> */}
     </div>
   );
 }
